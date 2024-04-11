@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Providers } from './providers'
 import './globals.css'
+import { GoogleTagManager } from '@next/third-parties/google'
 
 export const metadata: Metadata = {
 	title: 'Terre',
@@ -16,7 +17,11 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body>
-				<Providers>{children}</Providers>
+				<Providers>
+					<main>{children}</main>
+					{/* Past your GT here */}
+					<GoogleTagManager gtmId='YOUR-GTAG' />
+				</Providers>
 			</body>
 		</html>
 	)

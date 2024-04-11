@@ -11,6 +11,8 @@ import {
 import bg from '../images/book_img.png'
 import { validateForm } from '@/utils/validateForm'
 import ValidationErrors from './UI/ValidateErrors'
+import { Button } from '@chakra-ui/button'
+import { sendGTMEvent } from '@next/third-parties/google'
 
 const BookForm = () => {
 	const [name, setName] = useState('')
@@ -27,6 +29,7 @@ const BookForm = () => {
 
 		if (isValid) {
 			console.log('Form data is valid:', formData)
+			sendGTMEvent({ event: 'buttonClicked', value: formData })
 		} else {
 			console.error('Form validation error:', errors)
 		}
@@ -90,7 +93,17 @@ const BookForm = () => {
 						/>
 						<ValidationErrors errors={{ date: formErrors.date }} />
 						<Divider />
-						<button onClick={handleSubmit}>Submit</button>
+						<Button
+							onClick={handleSubmit}
+							w='100%'
+							mt='35px'
+							bg='#00857A'
+							color='#fff'
+							h='50px'
+							_hover={{ bg: '' }}
+						>
+							submit
+						</Button>
 					</FormControl>
 				</Flex>
 			</Box>
