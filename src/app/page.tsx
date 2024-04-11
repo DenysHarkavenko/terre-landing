@@ -1,6 +1,7 @@
 import Gallery from '@/components/Gallery'
 import Header from '@/components/Header/Header'
 import OurHistory from '@/components/OurHistory'
+import WorkTime from '@/components/WorkTime'
 import { Box, Heading } from '@chakra-ui/react'
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
 			<Header />
 			<OurHistory />
 			<Gallery />
+			<WorkTime />
 		</>
 	)
 }
