@@ -1,4 +1,5 @@
 import BookForm from '@/components/BookForm'
+import Footer from '@/components/Footer'
 import Gallery from '@/components/Gallery'
 import Header from '@/components/Header/Header'
 import OurHistory from '@/components/OurHistory'
@@ -13,6 +14,7 @@ export default function Home() {
 			<Gallery />
 			<WorkTime />
 			<BookForm />
+			<Footer />
 		</>
 	)
 }
