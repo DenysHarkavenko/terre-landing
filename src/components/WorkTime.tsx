@@ -59,13 +59,20 @@ const WorkTime = () => {
 							fontWeight='500'
 							mt='10px'
 						>
-							café
+							restaurant
 						</Heading>
 						<Flex mt='30px' align='center'>
 							<Image src={clock.src} boxSize={['40px', '50px']} />
 							<Text fontSize={['17px', '20px', '22px']} ml='12px'>
-								<span style={{ fontWeight: 'bold' }}>breakfast & Lunch:</span>{' '}
-								every day from 8am – 3pm
+								<span style={{ fontWeight: 'bold' }}>friday:</span> 8am -
+								11:30pm
+							</Text>
+						</Flex>
+						<Flex mt='30px' align='center'>
+							<Image src={clock.src} boxSize={['40px', '50px']} />
+							<Text fontSize={['17px', '20px', '22px']} ml='12px'>
+								<span style={{ fontWeight: 'bold' }}>saturday & sunday:</span>
+								9am – 2:00pm
 							</Text>
 						</Flex>
 					</Box>
