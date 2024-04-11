@@ -50,7 +50,7 @@ const CustomDrawer = () => {
 								menu
 							</Link>
 							<Divider />
-							<Link color='#000' fontSize='20px' mb='2' mt='20px'>
+							<Link color='#000' fontSize='20px' mb='2' mt='20px' href='#book'>
 								book now
 							</Link>
 							<Divider />

@@ -5,7 +5,7 @@ import OurHistoryM_S from './OurHistoryM_S'
 
 const OurHistory = () => {
 	return (
-		<Box bg={`url(${bg.src}) no-repeat center`} bgSize='cover'>
+		<Box bg={`url(${bg.src}) no-repeat center`} bgSize='cover' id='about'>
 			<Box
 				maxW='1400px'
 				m='0 auto'

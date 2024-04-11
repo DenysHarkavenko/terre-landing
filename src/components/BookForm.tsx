@@ -36,8 +36,13 @@ const BookForm = () => {
 	}
 
 	return (
-		<Box bg={`url(${bg.src}) no-repeat center`} bgSize='cover' h='fit-content'>
-			<Box maxW='1400px' m='0 auto' p={['60px 10px', '70px 84px', '100 500px']}>
+		<Box
+			bg={`url(${bg.src}) no-repeat center`}
+			bgSize='cover'
+			h='fit-content'
+			id='book'
+		>
+			<Box maxW='1400px' m='0 auto' p={['60px 10px', '70px 84px', '100px 500px']}>
 				<Flex direction='column' align='center'>
 					<Heading
 						fontWeight='400'

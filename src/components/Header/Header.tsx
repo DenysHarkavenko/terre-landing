@@ -1,5 +1,5 @@
 'use client'
-import { Box, Divider, Flex, Heading, Text } from '@chakra-ui/react'
+import { Box, Divider, Flex, Heading, Text, Link } from '@chakra-ui/react'
 import bg from '../../images/header_img.png'
 import HeaderNav from './HeaderNav'
 
@@ -41,7 +41,6 @@ const Header: React.FC = () => {
 								color='#000'
 								fontSize={['14px', '17px', '20px', '22px']}
 								p={['12px 15px', '25px 30px', '30px 35px', '35px 40px']}
-								// mt={['46px', null, '0', null, null]}
 								mt='45px'
 								bg='#fff'
 								borderRadius='50%'
@@ -55,7 +54,9 @@ const Header: React.FC = () => {
 									cursor: 'pointer',
 								}}
 							>
-								About <br /> us
+								<Link _hover={{ textDecor: 'none' }} href='#about'>
+									About <br /> us
+								</Link>
 							</Box>
 							<Text
 								color='#fff'

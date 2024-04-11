@@ -16,17 +16,17 @@ const HeaderNav = () => {
 		<Box
 			maxW='1400px'
 			m='0 auto'
-			p={['40px 10px', '70px 20px', '100 120px']}
+			p={['25px 10px', '25px 20px', null, null]}
 			as='nav'
 		>
 			<Flex justify='space-between'>
 				<Image src={logo.src} mb='25px' />
 				<Flex gap='50px'>
 					<Hide breakpoint='(max-width: 768px)'>
-						<Link color='#fff' fontSize='20px'>
+						<Link color='#fff' fontSize='20px' href='#menu'>
 							menu
 						</Link>
-						<Link color='#fff' fontSize='20px'>
+						<Link color='#fff' fontSize='20px' href='#book'>
 							book now
 						</Link>
 						<Link color='#fff' fontSize='20px'>
