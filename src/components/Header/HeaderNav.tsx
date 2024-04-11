@@ -13,7 +13,12 @@ const HeaderNav = () => {
 	}
 
 	return (
-		<Box maxW='1400px' m='0 auto' p='25px 20px' as='nav'>
+		<Box
+			maxW='1400px'
+			m='0 auto'
+			p={['40px 10px', '70px 20px', '100 120px']}
+			as='nav'
+		>
 			<Flex justify='space-between'>
 				<Image src={logo.src} mb='25px' />
 				<Flex gap='50px'>
