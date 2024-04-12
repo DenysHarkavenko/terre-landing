@@ -18,3 +18,9 @@ p {
 h2 {
 	font-family: Lora !important;
 }
+
+@media (prefers-reduced-motion: no-preference) {
+	:root {
+		scroll-behavior: smooth;
+	}
+}
